@@ -1,0 +1,57 @@
+.navbar .nav-link {
+  color: #808080;
+}
+.navbar .nav-link:hover {
+  color: #007bff;
+}
+.navbar .left-side-nav {
+  display: flex;
+}
+.navbar .right-side-nav {
+  display: flex;
+}
+.navbar .right-side-nav .username, .navbar .right-side-nav .register {
+  padding: 8px 0 8px 16px;
+}
+
+hr {
+  margin: 0 15px 16px 15px;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 100px;
+}
+.login-wrapper .login-container {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+}
+.login-wrapper .login-container h2 {
+  text-align: center;
+}
+.login-wrapper .login-container .error-msg {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.login-wrapper .login-container .login-register-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.login-wrapper .login-container .login-register-btn .btn {
+  padding: 6px 20px;
+}
+.login-wrapper .login-container .login-register-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-wrapper .login-container .login-register-msg a:hover {
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
