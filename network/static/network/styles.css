@@ -1,3 +1,15 @@
+body {
+  padding: 0 100px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom: 1px solid #DCDCDC;
+  margin-bottom: 20px;
+}
 .navbar .nav-link {
   color: #808080;
 }
@@ -14,8 +26,13 @@
   padding: 8px 0 8px 16px;
 }
 
-hr {
-  margin: 0 15px 16px 15px;
+.body {
+  padding: 0 20px;
+  height: 200vh;
+}
+
+.page-title {
+  margin-bottom: 20px;
 }
 
 .login-wrapper {
@@ -54,4 +71,17 @@ hr {
 }
 .login-wrapper .login-container .login-register-msg a:hover {
   text-decoration: none;
+}
+
+.post-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.post-container .compose-post {
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.post-container .post-btn {
+  padding: 6px 20px;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,18 @@ $blue: #007bff;
 $gray: #808080;
 $light-gray: #f5f5f5;
 
+body {
+    // height: 100vh;
+    // padding: 0 100px 1000px 100px;
+    padding: 0 100px;
+}
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 20px;
     .nav-link {
         color: $gray;
         &:hover {
@@ -19,8 +30,12 @@ $light-gray: #f5f5f5;
         }
     }
 }
-hr {
-    margin: 0 15px 16px 15px;
+.body {
+    padding: 0 20px;
+    height: 200vh;
+}
+.page-title {
+    margin-bottom: 20px;
 }
 .login-wrapper {
     display: flex;
@@ -57,5 +72,17 @@ hr {
                 text-decoration: none;
             }
         }
+    }
+}
+.post-container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    .compose-post {
+        min-height: 100px;
+        margin-bottom: 10px;
+    }
+    .post-btn {
+        padding: 6px 20px;
     }
 }

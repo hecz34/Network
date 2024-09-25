@@ -1,5 +1,14 @@
-{% extends "network/layout.html" %}
-
-{% block body %}
-    TODO
+{% extends "network/layout.html" %} {% block body %}
+<h2 class="page-title">All Posts</h2>
+<div class="post-container">
+  <form>
+    <h5>New Post</h5>
+    <textarea
+      class="form-control compose-post"
+      id="post-msg"
+      placeholder="What's on your mind?"
+    ></textarea>
+    <input type="submit" class="btn btn-primary post-btn" value="Post" />
+  </form>
+</div>
 {% endblock %}
