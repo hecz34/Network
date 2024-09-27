@@ -1,7 +1,11 @@
-{% extends "network/layout.html" %} {% block body %}
+{% extends "network/layout.html" %} 
+{% load static %}
+
+{% block body %} 
+{% if user.is_authenticated%}
 <h2 class="page-title">All Posts</h2>
 <div class="post-container">
-  <form>
+  <form id="post-form">
     <h5>New Post</h5>
     <textarea
       class="form-control compose-post"
@@ -11,4 +15,9 @@
     <input type="submit" class="btn btn-primary post-btn" value="Post" />
   </form>
 </div>
+{% endif %} 
+{% endblock %}
+
+{% block script %}
+  <script src="{% static 'network/network.js' %}"></script>
 {% endblock %}
